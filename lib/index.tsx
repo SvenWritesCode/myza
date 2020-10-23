@@ -10,8 +10,7 @@ import { Spacer } from '../components/Spacer'
 
 import ReactDOMServer from 'react-dom/server'
 
-const filePath = path.resolve(__dirname, '../components/index.html')
-const emailHtml = fs.readFileSync(filePath, { encoding: 'utf8' })
+import { emailHtml } from '../components/BaseTemplate'
 
 interface EmailOptions {
   fontFamily: string
